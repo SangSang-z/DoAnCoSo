@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/wwwroot/css/reset.css" asp-append-version="true" />
+    <title>@ViewData["Title"] - Website_for_selling_car_tickets</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="~/css/search.css" asp-append-version="true" />
+</head>
+
+<body>
+    <main>
+        <!--search-->
+        <div class="search-main" style="height: 100px; width: 100%; flex:1;">
+            <div class="top" style="height: 50%; background: #45A8EF;">
+                <div class="middle" style="background:#FFFFFF;">
+                    <div class="img-wrapper">
+                        <img src="@Url.Content("~/lib/icon/rec.png")" alt="circle-icon">
+                    </div>
+                    <div class="enter_selection">
+                        <label for="search-input">Nơi xuất phát</label>
+                        <input type=" text" id="search-input" placeholder="Hà Nội" />
+                    </div>
+                    <img src="@Url.Content("~/lib/icon/comeback-icon.jpg")" alt="comeback-icon"
+                        style="height: 50px; width: 50px; margin-right: 20px;">
+                    <img src="@Url.Content("~/lib/icon/location-icon.jpg")" alt="location-icon"
+                        style="height: 50px; width: 50px;">
+                    <div class="enter_selection">
+                        <label for="search-input">Nơi đến</label>
+                        <input type=" text" id="search-input" placeholder="Hồ Chí Minh" />
+                    </div>
+                    <img src="@Url.Content("~/lib/icon/calendar.png")" alt="calendar-icon"
+                        style="height: 50px; width: 50px; margin-right: 20px;" onclick="">
+                    <div class="enter_selection">
+                        <label for="search-input">Ngày đi</label>
+                        <input type=" text" id="search-input" placeholder="1/4/2025" />
+                    </div>
+                    <button class="search-trip" onclick="location.href='@Url.Action("SearchInfTrip", "Search")'">Tìm
+                        chuyến xe</button>
+                </div>
+            </div>
+        </div>
+        <img src="@Url.Content("~/lib/icon/bus-running.png")" alt="bus-lỏ" style="height: 200px; width: 100%;">
+        <div class="main-container">
+            <!-- Bộ lọc tìm kiếm -->
+            <div class="container-searchforthecar">
+                <aside class="filter-box">
+                    <h3>Bộ Lọc Tìm Kiếm</h3>
+                    <label><input type="checkbox"> Sáng sớm 00:00 - 08:00</label><br>
+                    <label><input type="checkbox"> Buổi sáng 06:00 - 12:00</label><br>
+                    <label><input type="checkbox"> Buổi chiều 12:00 - 18:00</label><br>
+                    <label><input type="checkbox"> Buổi tối 18:00 - 24:00</label><br>
+                    <h4>Loại xe</h4>
+                    <label><input type="checkbox"> Ghế</label>
+                    <label><input type="checkbox"> Giường</label>
+                    <label><input type="checkbox"> Limousine</label>
+                    <h4>Hàng ghế</h4>
+                    <label><input type="checkbox"> Hàng đầu</label>
+                    <label><input type="checkbox"> Hàng giữa</label>
+                    <label><input type="checkbox"> Hàng cuối</label>
+                    <h4>Tầng</h4>
+                    <label><input type="checkbox"> Tầng trên</label>
+                    <label><input type="checkbox"> Tầng dưới</label>
+                    <h4>Nhà xe</h4>
+                    <label><input type="checkbox"> Phương Trang (FUTA Bus Lines)</label><br>
+                    <label><input type="checkbox"> Thành Bưởi</label><br>
+                    <label><input type="checkbox"> Hùng Cường</label><br>
+                    <label><input type="checkbox"> Huệ Nghĩa</label><br>
+                    <label><input type="checkbox"> Long Vân Limousine</label><br>
+                    <label><input type="checkbox"> Tuấn Hưng</label><br>
+                    <label><input type="checkbox"> Toàn Thắng</label><br>
+                </aside>
+            </div>
+
+            <!-- Thông tin chuyến đi -->
+            <div class="list-container">
+                <div class="container">
+                    <div class="container-name-car">
+                        <a href="link-to-bus-company-page">
+                            <img src="@Url.Content("~/lib/icon/bus.png")" alt="Logo Phương Trang (FUTA Bus Lines)"
+                                class="img-search">
+                            <span style="font-weight: bold;">Phương Trang (FUTA Bus Lines)</span>
+                        </a>
+                        <h3>Limousine</h3>
+                        <p>Số chỗ trống: 10</p>
+                    </div>
+                    <div class="container-inf-trip">
+                        <!-- Thông tin chuyến đi -->
+                        <div class="trip-time">
+                            <a href="link-to-departure-page"><img src="@Url.Content("~/lib/icon/streetview.png")"
+                                    alt="Xuất phát" class="img-search">00:00</a>
+                            <br>
+                            <a href="link-to-departure-location" class="location">Bến xe Miền Tây</a>
+
+                        </div>
+                        <div class="trip-time">
+                            <a href="link-to-arrival-page"><img src="@Url.Content("~/lib/icon/location.png")"
+                                    alt="Điểm đến" class="img-search">07:00</a>
+                            <br>
+                            <a href="link-to-arrival-location" class="location">Bến Xe Đà Lạt</a>
+
+                        </div>
+                        <p style="color: red; font-size : 2rem ;">Giá vé : 600.000đ</p>
+                        <button onclick="increaseSeats()" class=" select-sit"> Chọn chỗ </button>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="container-name-car">
+                        <a href="link-to-bus-company-page">
+                            <img src="@Url.Content("~/lib/icon/bus.png")" alt="Logo Phương Trang (FUTA Bus Lines)"
+                                class="img-search">
+                            <span style="font-weight: bold;">Phương Trang (FUTA Bus Lines)</span>
+                        </a>
+                        <h3>Limousine</h3>
+                        <p>Số chỗ trống: 10</p>
+                    </div>
+                    <div class="container-inf-trip">
+                        <!-- Thông tin chuyến đi -->
+                        <div class="trip-time">
+                            <a href="link-to-departure-page"><img src="@Url.Content("~/lib/icon/streetview.png")"
+                                    alt="Xuất phát" class="img-search">00:00</a>
+                            <br>
+                            <a href="link-to-departure-location" class="location">Bến xe Miền Tây</a>
+
+                        </div>
+                        <div class="trip-time">
+                            <a href="link-to-arrival-page"><img src="@Url.Content("~/lib/icon/location.png")"
+                                    alt="Điểm đến" class="img-search">07:00</a>
+                            <br>
+                            <a href="link-to-arrival-location" class="location">Bến Xe Đà Lạt</a>
+
+                        </div>
+                        <p style="color: red; font-size : 2rem ;">Giá vé : 600.000đ</p>
+                        <button onclick="increaseSeats()" class=" select-sit"> Chọn chỗ </button>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="container-name-car">
+                        <a href="link-to-bus-company-page">
+                            <img src="@Url.Content("~/lib/icon/bus.png")" alt="Logo Phương Trang (FUTA Bus Lines)"
+                                class="img-search">
+                            <span style="font-weight: bold;">Phương Trang (FUTA Bus Lines)</span>
+                        </a>
+                        <h3>Limousine</h3>
+                        <p>Số chỗ trống: 10</p>
+                    </div>
+                    <div class="container-inf-trip">
+                        <!-- Thông tin chuyến đi -->
+                        <div class="trip-time">
+                            <a href="link-to-departure-page"><img src="@Url.Content("~/lib/icon/streetview.png")"
+                                    alt="Xuất phát" class="img-search">00:00</a>
+                            <br>
+                            <a href="link-to-departure-location" class="location">Bến xe Miền Tây</a>
+
+                        </div>
+                        <div class="trip-time">
+                            <a href="link-to-arrival-page"><img src="@Url.Content("~/lib/icon/location.png")"
+                                    alt="Điểm đến" class="img-search">07:00</a>
+                            <br>
+                            <a href="link-to-arrival-location" class="location">Bến Xe Đà Lạt</a>
+
+                        </div>
+                        <p style="color: red; font-size : 2rem ;">Giá vé : 600.000đ</p>
+                        <button onclick="increaseSeats()" class=" select-sit"> Chọn chỗ </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,240 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* display: flex; */
+    height: 100vh;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+}
+.staff_management{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.sidebar {
+    background-color: #1778C8;
+    color: white;
+    width: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 900px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size:x-large;
+    gap:5px;
+}
+.logo img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav ul li {
+    margin: 10px 0;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav ul li a:hover {
+    color: #45A8EF;
+}
+.user-info {
+    text-align: end;
+    margin-top: px;
+}
+
+.user_icon{
+    display: flex;
+    flex-direction: row;
+    margin-left: 103px;
+}
+.user_icon i{
+    margin-right: 3px;
+}
+.user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.user-info p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.user-info span {
+    color: #ccc;
+    font-size: 14px;
+}
+.logout{
+   margin-left: 155px;
+   margin-top: -30px;
+}
+
+.logout a {
+    color: white;
+    text-decoration: none;
+    margin-top: 5px;
+    text-align: end;
+    /* margin-left: 170px; */
+    
+}
+.arrow {
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.submenu {
+    display: none;
+    list-style: none;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.submenu li {
+    padding: 8px 0;
+}
+
+.submenu li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.submenu li a:hover {
+    background-color: #5a5a5a;
+}
+
+/* Add Hover Effect for the Menu */
+/* .menu-item:hover .submenu {
+    display: block;
+} */
+
+.menu-item:hover .header {
+    background-color: #1778C8;
+}
+
+
+/* danh sách khách hàng*/
+.header-customer{
+    display: flex;
+    
+}
+h1{
+    color: #1778C8;
+    margin-left: 10px;
+}
+.actions{
+    margin-top: 30px;
+   margin-left: 500px;
+  
+}
+.actions, button{
+    font-size: 15px;
+   
+}
+table {
+    width: 1250px;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+  }
+  
+  thead {
+    background-color: #2196f3;
+    color: white;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+  
+  .action button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .action button:hover {
+    background-color: #0056b3;
+  }
+  /*button action*/
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .dropdown-btn i {
+    margin-left: 5px;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+  .dropdown-menu a {
+    color: black;
+    padding: 10px 12px;
+    display: block;
+    text-decoration: none;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Hiển thị khi hover hoặc click */
+  .dropdown.show .dropdown-menu {
+    display: block;
+  }

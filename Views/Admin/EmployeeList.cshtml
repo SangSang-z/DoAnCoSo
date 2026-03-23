@@ -1,0 +1,21 @@
+@model IEnumerable<Website_for_selling_car_tickets.Models.Employee>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Tên</th>
+            <th>Chức vụ</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var employee in Model)
+    {
+        <tr>
+            <td>@employee.Name</td>
+            <td>@employee.Position</td>
+            <td>@employee.Email</td>
+        </tr>
+    }
+    </tbody>
+</table>

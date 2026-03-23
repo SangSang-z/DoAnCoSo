@@ -1,0 +1,212 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f4f6;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-y: auto; 
+  }
+  
+  .background_color {
+    height: 50px;
+    background-color: #45A8EF;
+    gap:5px;
+}
+
+.search-container {
+    background-image: url("../image/backgroundhome.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%; /* Đảm bảo hình ảnh phủ kín container */
+    height: 250px; /*Tăng chiều cao để chứa các phần tử*/
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Căn chỉnh các phần tử theo chiều dọc */
+    align-items: center; /* Căn chỉnh các phần tử theo chiều ngang */
+    text-align: center; /* Căn giữa nội dung */
+    color: #333; /* Màu chữ chính */
+    margin-top:5px;
+}
+  .main_container {
+   
+    gap: 5rem;    
+    margin-top: 2rem;
+    flex-wrap: nowrap;
+    justify-content:center;
+    margin-bottom: 50px;
+   
+  }
+ 
+  section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(149, 139, 139, 0.76);
+  }
+  
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+     margin-bottom: 1rem;
+    display:flex;
+  }
+  
+  h4 {
+    margin: 12px 0 8px;
+  }
+  .info{
+    margin-top:150px;
+    justify-content:flex-start;
+  }
+  .seats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  .seat {
+    padding: 10px;
+    border-radius: 8px;
+    background: #d1d5db;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .seat.booked {
+    background: #93c5fd;
+  }
+  
+  .seat.selected {
+    background: #ef4444;
+    color: white;
+  }
+  
+  .note {
+    font-size: 15px;
+    color: #4b5563;
+    margin-top: 10px;
+  }
+  
+  .hotline {
+    color: #dc2626;
+    font-weight: bold;
+  }
+  
+  .form-section input {
+    width: 100%;
+    padding: 10px;
+    font-size: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  
+  .form-section label {
+    
+    display: block;
+  font-weight: 600;
+  font-size:20px;
+  margin-bottom: 6px;
+  margin-top: 12px;
+  color: #111827;
+  }
+  
+  .form-section span {
+    color: #dc2626; /* đỏ tươi */
+  margin-left: 4px;
+  }
+  
+  
+  
+  .ticket-section ul {
+    margin-top:150px;
+    font-size: 20px;
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  .ticket-section .total {
+    color: red;
+    font-weight: bold;
+  }
+  .tb1{
+    font-weight: bold;
+    font-size:20px;
+    margin-top:80px;
+  }
+  .tb{
+    font-weight: bold;
+    font-size:20px;
+    margin-top:130px;
+  }
+  .state{
+    margin-top:30px;
+    margin-left:50px;
+    font-size:14px;
+  }
+  /* .note_container {
+    display: flex;
+    justify-content: space-around;
+    
+  } */
+  .notice-broard {
+    margin-bottom:50px;
+    margin-left:110px;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(149, 139, 139, 0.76);
+    padding:5px;
+   
+  }
+  .money{
+    gap: 60%;
+    margin-left:75px;
+    width: 55.6%;
+    margin-bottom:50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* căn giữa theo chiều dọc */
+    background: white;
+    padding: 16px 24px;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(149, 139, 139, 0.76);
+    color: white;
+  }
+  .price{
+
+    font-size:24px;
+    color: red;
+    font-weight: bold;
+  }
+  .actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+    margin-top: 20px;
+  }
+  
+  .actions .cancel {
+    background: red;
+    border-radius: 8px;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .actions .submit {
+    background: #3b82f6;
+    
+    border: none;
+    padding: 10px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+   
+    width: 150px;
+  }
+  .actions .submit a {
+    color: white;
+    text-decoration: none;
+  }
+  

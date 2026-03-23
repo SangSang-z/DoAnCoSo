@@ -1,0 +1,254 @@
+/* Reset mặc định */
+* {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Đảm bảo form đăng nhập căn giữa màn hình */
+#login-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Căn giữa cả chiều ngang và chiều dọc */
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none; /* Ẩn form khi chưa cần thiết */
+    justify-content: center;
+    align-items: center;  /* Đảm bảo căn giữa nội dung trong phần tử */
+    transition: opacity 0.3s ease;
+    z-index: 9999;
+    margin: auto;
+}
+
+/* Khi thêm class "show", form sẽ hiển thị */
+.login-form.show {
+    display: flex;
+    opacity: 1;
+}
+
+/* Form đăng nhập sẽ được căn giữa màn hình */
+.login-form form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    transition: transform 0.3s ease;
+    transform: scale(0.9); /* Chuyển động khi mở */
+    margin-top: 0; /* Đảm bảo không có khoảng cách phía trên */
+}
+
+.login-form.show form {
+    transform: scale(1); /* Khi hiển thị, form sẽ trở về kích thước ban đầu */
+}
+
+.login-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 12px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.login-form input:focus {
+    border-color: black;
+    outline: none;
+}
+
+.login-form .login-account {
+    padding: 12px;
+    margin: 20px 0;
+    width: 100%;
+    background-color: white;
+    border: 2px solid #155b8a;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #155b8a;
+    transition: all 0.3s ease;
+}
+
+.login-form .login-account:hover {
+    background-color: #155b8a;
+    color: white;
+}
+
+.close-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: white;
+    border: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    z-index: 10000;
+}
+
+.close-btn:hover {
+    color: #155b8a;
+    background-color: #f1f1f1;
+}
+
+.login-links a {
+    color: #155b8a;
+    margin: 5px 5px 0px 10px;
+    text-decoration: none;
+}
+
+.login-links a:hover {
+    color: #155b8a;
+    text-decoration: underline;
+}
+.nav-link{
+    color: black;
+    text-decoration: none;
+}
+.nav-link:hover{
+    color:#155b8a;
+    text-decoration: underline;
+}
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    min-height: 100vh;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.icon_bus {
+    color: #f1c40f;
+}
+
+.menu-item {
+    margin-bottom: 20px;
+}
+
+.menu-item .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    background-color: #34495e;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.menu-item .header:hover {
+    background-color: #3d566e;
+}
+
+.menu-item .header i {
+    margin-right: 10px;
+    color: #f1c40f;
+}
+
+.menu-item .submenu {
+    list-style: none;
+    padding-left: 20px;
+    margin-top: 10px;
+    display: none;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.menu-item .submenu li {
+    margin-bottom: 10px;
+}
+
+.menu-item .submenu a {
+    text-decoration: none;
+    color: #bdc3c7;
+    transition: color 0.3s;
+}
+
+.menu-item .submenu a:hover {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+/* User info & logout */
+.user-info {
+    margin-top: 30px;
+    border-top: 1px solid #7f8c8d;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.user-info .user_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.user-info p {
+    margin: 0;
+}
+
+.logout {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.logout a {
+    text-decoration: none;
+    color: #e74c3c;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.logout a:hover {
+    color: #c0392b;
+}
+
+/* Responsive toggle */
+.menu-item.active .submenu {
+    display: block;
+}
+
+/* Fade-in effect */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

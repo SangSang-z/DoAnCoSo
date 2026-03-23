@@ -1,0 +1,181 @@
+*{
+    box-sizing: border-box; /* Đảm bảo padding và border không làm tăng kích thước của phần tử */
+  }
+  html{
+    font-size: 62.5%; /* Đặt kích thước font mặc định cho html */
+  }
+  body{
+    font-size: 1.6rem; /* Đặt kích thước font mặc định cho body */
+    display: flex;
+    flex-direction: column;
+  }
+  html, body {
+    height: 100%;
+    margin: 0; /* Loại bỏ khoảng cách mặc định */
+    font-family: 'Roboto', sans-serif;;
+    color: black;
+  }
+  /* main */
+  .top{
+    position: relative
+  }
+  .middle {
+    width: 1220px;
+    height: 100px;
+    position: absolute;
+    top:0px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding-left: 10px;         /* cách lề trái 10px */
+    padding-right: 10px;        /* thêm nếu muốn cách đều phải */
+    background-color: #fff;
+    gap: 20px;                  /* khoảng cách đều giữa các phần tử */
+  }
+  .enter_selection {
+    display: flex;
+    flex-direction: column;
+    width: 160px;               /* cố định chiều rộng */
+    min-width: 160px;           /* ngăn co lại */
+    max-width: 160px;           /* ngăn giãn ra */
+    box-sizing: border-box;
+  }
+  
+  .enter_selection label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+    color: black;
+  }
+  
+  .enter_selection input {
+    padding: 8px;
+    font-size: 1.6rem;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .img-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+  }
+  
+  .img-wrapper img {
+    height: 30px;
+    width: 30px;
+  }
+  
+  .search-trip {
+    padding: 8px 16px;
+    margin-top: 20px;
+    font-size: 1.6rem;
+    background-color: #1778C8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .search-trip:hover{
+    background-color: #125ea0;
+    transform: scale(1.05);
+    color: rgb(9, 0, 0);
+  }
+  /*--sell and sale inf*/
+  
+  /* ========================== CƠ BẢN ========================== */
+  .container1,
+  .container2,
+  .container3 {
+    width: 90%;
+    margin: 60px auto;
+  }
+  
+  .title1,
+  .title2,
+  .title3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    margin: 20px 10px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* ========================== SCROLL CONTAINER ========================== */
+  .scroll-container1,
+  .scroll-container2,
+  .scroll-container3 {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px 10px;
+    scrollbar-width: thin;
+    scrollbar-color: #ccc transparent;
+  }
+  
+  .scroll-container1::-webkit-scrollbar,
+  .scroll-container2::-webkit-scrollbar,
+  .scroll-container3::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .scroll-container1::-webkit-scrollbar-thumb,
+  .scroll-container2::-webkit-scrollbar-thumb,
+  .scroll-container3::-webkit-scrollbar-thumb {
+    background: #bbb;
+    border-radius: 10px;
+  }
+  
+  /* ========================== THẺ ƯU ĐÃI ========================== */
+  .offer-card {
+    min-width: 280px;
+    max-width: 300px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+  
+  .offer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .img-all,
+  .offer-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* ========================== NỘI DUNG ƯU ĐÃI ========================== */
+  .offer-content {
+    padding: 15px;
+    font-size: 15px;
+    color: #444;
+    line-height: 1.4;
+    background-color: #fafafa;
+    border-top: 1px solid #eee;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

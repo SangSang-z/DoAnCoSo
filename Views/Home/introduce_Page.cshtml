@@ -1,0 +1,133 @@
+@{
+    ViewData["Title"] = "introduce Page";
+}
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu Vexe.com</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: justify;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            cursor: default;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .header img {
+            height: 40px;
+        }
+
+        .header .logo-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .main-title {
+            font-size: 28px;
+            color: #007bff;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .bus-image {
+            display: block;
+            margin: 0 auto;
+            width: 300px;
+            height: auto;
+        }
+
+        .content {
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+
+        .content h2 {
+            font-size: 20px;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .content ul {
+            list-style-type: decimal;
+            padding-left: 20px;
+        }
+
+        .content ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            background-color: #007bff;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1 class="main-title">GIỚI THIỆU VÉ VEXE.COM</h1>
+
+        <img src="@Url.Content("~/lib/icon/bus-running.png")" alt="bus-lỏ" style="height: 200px; width: 100%;">
+
+        <div class="content">
+            <p>
+                <strong>Được thành lập vào năm 2025</strong>, Vexe là dự án duy nhất được lựa chọn bởi bộ phận Vận
+                chuyển Quốc gia để triển khai hệ thống bán vé trực tuyến trên phạm vi toàn quốc tại Việt Nam. Được gọi
+                chính thức là hệ thống <strong>BMS (Bus Management System)</strong> và phần mềm hỗ trợ bán vé trực tuyến
+                quốc gia (dành cho khách hàng) được gọi là <strong>AMS (Agent Management System)</strong>.
+            </p>
+
+            <h2>Các tính năng của Vexe.com:</h2>
+            <ul>
+                <li><strong>Đặt vé</strong>: Đặt vé nhanh chóng, tiện lợi.</li>
+                <li><strong>Tra cứu</strong>: Tra cứu thông tin chuyến đi dễ dàng.</li>
+                <li><strong>Thanh toán</strong>: Thanh toán an toàn, đa dạng phương thức.</li>
+                <li><strong>Quản lý</strong>: Quản lý vé và hành trình hiệu quả.</li>
+                <li><strong>Hỗ trợ</strong>: Hỗ trợ khách hàng 24/7.</li>
+                <li><strong>Tích hợp</strong>: Tích hợp nhiều dịch vụ vận tải.</li>
+            </ul>
+
+            <p>
+                Hệ thống Vexe hỗ trợ đặt vé trực tuyến tại hơn 500 nhà xe trên toàn quốc. Với mục tiêu số hóa ngành vận
+                tải hành khách, Vexe mang đến giải pháp đặt vé nhanh chóng, tiện lợi, giúp khách hàng tiết kiệm thời
+                gian và chi phí. Hệ thống BMS được các nhà xe sử dụng để quản lý hoạt động kinh doanh hiệu quả, từ việc
+                bán vé, quản lý hành trình, đến việc theo dõi doanh thu. Đội ngũ hỗ trợ khách hàng của Vexe luôn sẵn
+                sàng giải đáp thắc mắc và hỗ trợ người dùng 24/7.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

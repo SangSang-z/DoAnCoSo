@@ -1,0 +1,255 @@
+/* banner tìm kiếm*/
+body  {
+    font-family: sans-serif ;
+    margin: 0;
+    padding: 0;
+}
+
+.background_color {
+    height: 50px;
+    background-color: #45A8EF;
+}
+.background_color, .search
+/* backround*/
+.search-container {
+    background-image: url("../image/backgroundhome.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%; /* Đảm bảo hình ảnh phủ kín container */
+    height: 250px; /*Tăng chiều cao để chứa các phần tử*/
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Căn chỉnh các phần tử theo chiều dọc */
+    align-items: center; /* Căn chỉnh các phần tử theo chiều ngang */
+    text-align: center; /* Căn giữa nội dung */
+    color: #333; /* Màu chữ chính */
+    margin-top:5px;
+}
+/*thanh tim kiem*/
+.location-row, .date-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Giảm khoảng cách giữa các hàng */
+    justify-content:space-between;
+}
+/* nut tim kiem*/
+.location-label, .date-label {
+    font-weight: bold;
+    width: 80px;
+    color: #555;
+    text-align: left; /* Căn trái nhãn */
+    margin-left: 10px;
+   
+}
+
+.location-name, .date-value {
+    font-size: 18px;
+    color: #333;
+    margin-left: 10px; /* Khoảng cách từ nhãn */
+}
+
+.swap-icon {
+    margin: 0 10px;
+    color: #888;
+    cursor: pointer;
+}
+
+.search-button {
+    background-color: #ff6b00;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 200px; /* Chiều rộng cố định cho nút */
+    transition: background-color 0.3s;
+    
+}
+
+.search-button:hover {
+    background-color: #e05d00;
+}
+.filter{
+    background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+    position: absolute;
+    top:90px;
+    width: 80%;
+    margin-left:150px;
+}
+.location  {
+    display:flex;
+    flex-direction:row;
+    
+    gap:20px;
+   font-size:30px !important;
+   
+}
+.location-icons{
+    margin-top:10px;
+}
+.location-icon{
+    margin-top:5px;
+}
+/* bo tron text*/
+.location input{
+    border-radius:10px;
+}
+.date-row input{
+    border-radius:10px;
+}
+.date-row{
+    margin-top:10px;
+}
+/*--------------------------------------------------*/
+/*thanh cuộn 1*/
+
+.container1 {
+    width: 90%;
+    margin: auto;
+   
+}
+.title1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left:10px;
+    position: absolute;
+    top: 350px; /* Điều chỉnh khoảng cách từ đỉnh container */
+    left: 10px; /* Điều chỉnh khoảng cách từ bên trái container */
+    z-index: 10; /* Đảm bảo văn bản nằm trên các phần tử khác nếu cần */
+    padding: 5px; /* Thêm padding nếu cần */
+}
+.scroll-container1 {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 50px 0;
+    scrollbar-width: thin;
+    scrollbar-color: gray transparent;
+}
+.scroll-container1::-webkit-scrollbar {
+    height: 8px;
+}
+.scroll-container1::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 10px;
+}
+.offer-card {
+    min-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.offer-card img {
+    width: 100%;
+    height: auto;
+}
+.offer-content {
+    padding: 10px;
+    font-size: 14px;
+}
+/*-----------------------------------------------------------*/
+/*thanh cuộn 2*/
+
+.container2 {
+    width: 90%;
+    margin: auto;
+   
+}
+.title2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left:10px;
+    position: absolute;
+    margin-top: 10px; /* Điều chỉnh khoảng cách từ đỉnh container */
+    left: 10px; /* Điều chỉnh khoảng cách từ bên trái container */
+    z-index: 10; /* Đảm bảo văn bản nằm trên các phần tử khác nếu cần */
+    padding: 5px; /* Thêm padding nếu cần */
+}
+.scroll-container2 {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 70px 0;
+    scrollbar-width: thin;
+    scrollbar-color: gray transparent;
+}
+.scroll-container2::-webkit-scrollbar {
+    height: 8px;
+}
+.scroll-container2::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 10px;
+}
+.offer-card {
+    min-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.offer-card img {
+    width: 100%;
+    height: auto;
+}
+.offer-content {
+    padding: 30px;
+    font-size: 14px;
+}
+/*-----------------------------------------------------*/
+/*thanh cuộn 3*/
+
+.container3 {
+    width: 90%;
+    margin: auto;
+   
+}
+.title3 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left:10px;
+    position: absolute;
+    margin-top: 10px; /* Điều chỉnh khoảng cách từ đỉnh container */
+    left: 10px; /* Điều chỉnh khoảng cách từ bên trái container */
+    z-index: 10; /* Đảm bảo văn bản nằm trên các phần tử khác nếu cần */
+    padding: 5px; /* Thêm padding nếu cần */
+}
+.scroll-container3 {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 70px 0;
+    scrollbar-width: thin;
+    scrollbar-color: gray transparent;
+}
+.scroll-container3::-webkit-scrollbar {
+    height: 8px;
+}
+.scroll-container3::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 10px;
+}
+.offer-card {
+    min-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.offer-card img {
+    width: 100%;
+    height: auto;
+}
+.offer-content {
+    padding: 30px;
+    font-size: 17px;
+}

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Website-for-selling-car-tickets.props" />
+</Project>

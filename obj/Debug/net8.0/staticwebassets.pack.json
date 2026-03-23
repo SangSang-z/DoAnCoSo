@@ -1,0 +1,209 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\DACS\\nhom_4_DACS\\Website-for-selling-car-tickets\\wwwroot\\css\\Login.css",
+      "PackagePath": "staticwebassets\\css\\Login.css"
+    },
+    {
+      "Id": "D:\\DACS\\nhom_4_DACS\\Website-for-selling-car-tickets\\wwwroot\\css\\contact.css",
+      "PackagePath": "staticwebassets\\css\\contact.css"
+    },
+    {
+      "Id": "D:\\DACS\\nhom_4_DACS\\Website-for-selling-car-tickets\\wwwroot\\css\\homepage.css",
+      "PackagePath": "staticwebassets\\css\\homepage.css"
+    },
+    {
+      "Id": "D:\\DACS\\nhom_4_DACS\\Website-for-selling-car-tickets\\wwwroot\\css\\main.css",
+      "PackagePath": "staticwebassets\\css\\main.css"
+    },
+    {
+      "Id": "D:\\DACS\\nhom_4_DACS\\Website-for-selling-car-tickets\\wwwroot\\css\\reset.css",
+      "PackagePath": "staticwebassets\\css\\reset.css"
+    },
+    {
+      "Id": "D:\\DACS\\nhom_4_DACS\\Website-for-selling-car-tickets\\wwwroot\\css\\search.css",
+      "PackagePath": "staticwebassets\\css\\search.css"
+    },
+    {
+      "Id": "D:\\DACS\\nhom_4_DACS\\Website-for-selling-car-tickets\\wwwroot\\css_admin\\admin_layout.css",
+      "PackagePath": "staticwebassets\\css_admin\\admin_layout.css"
+    },
+    {
+      "Id": "D:\\DACS\\nhom_4_DACS\\Website-for-selling-car-tickets\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\DACS\\nhom_4_DACS\\Website-for-selling-car-tickets\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\DACS\\nhom_4_DACS\\Website-for-selling-car-tickets\\wwwroot\\lib\\icon\\Facebook.png",
+      "PackagePath": "staticwebassets\\lib\\icon\\Facebook.png"
+    },
+    {
+      "Id": "D:\\DACS\\nhom_4_DACS\\Website-for-selling-car-tickets\\wwwroot\\lib\\icon\\TikTok.png",
+      "PackagePath": "staticwebassets\\lib\\icon\\TikTok.png"
+    },
+    {
+      "Id": "D:\\DACS\\nhom_4_DACS\\Website-for-selling-car-tickets\\wwwroot\\lib\\icon\\bus-running.png",
+      "PackagePath": "staticwebassets\\lib\\icon\\bus-running.png"
+    },
+    {
+      "Id": "D:\\DACS\\nhom_4_DACS\\Website-for-selling-car-tickets\\wwwroot\\lib\\icon\\bus.png",
+      "PackagePath": "staticwebassets\\lib\\icon\\bus.png"
+    },
+    {
+      "Id": "D:\\DACS\\nhom_4_DACS\\Website-for-selling-car-tickets\\wwwroot\\lib\\icon\\calendar.png",
+      "PackagePath": "staticwebassets\\lib\\icon\\calendar.png"
+    },
+    {
+      "Id": "D:\\DACS\\nhom_4_DACS\\Website-for-selling-car-tickets\\wwwroot\\lib\\icon\\comeback-icon.jpg",
+      "PackagePath": "staticwebassets\\lib\\icon\\comeback-icon.jpg"
+    },
+    {
+      "Id": "D:\\DACS\\nhom_4_DACS\\Website-for-selling-car-tickets\\wwwroot\\lib\\icon\\inf1.png",
+      "PackagePath": "staticwebassets\\lib\\icon\\inf1.png"
+    },
+    {
+      "Id": "D:\\DACS\\nhom_4_DACS\\Website-for-selling-car-tickets\\wwwroot\\lib\\icon\\inf2.webp",
+      "PackagePath": "staticwebassets\\lib\\icon\\inf2.webp"
+    },
+    {
+      "Id": "D:\\DACS\\nhom_4_DACS\\Website-for-selling-car-tickets\\wwwroot\\lib\\icon\\inf3.jpg",
+      "PackagePath": "staticwebassets\\lib\\icon\\inf3.jpg"
+    },
+    {
+      "Id": "D:\\DACS\\nhom_4_DACS\\Website-for-selling-car-tickets\\wwwroot\\lib\\icon\\inf4.jpg",
+      "PackagePath": "staticwebassets\\lib\\icon\\inf4.jpg"
+    },
+    {
+      "Id": "D:\\DACS\\nhom_4_DACS\\Website-for-selling-car-tickets\\wwwroot\\lib\\icon\\inf5.png",
+      "PackagePath": "staticwebassets\\lib\\icon\\inf5.png"
+    },
+    {
+      "Id": "D:\\DACS\\nhom_4_DACS\\Website-for-selling-car-tickets\\wwwroot\\lib\\icon\\location-icon.jpg",
+      "PackagePath": "staticwebassets\\lib\\icon\\location-icon.jpg"
+    },
+    {
+      "Id": "D:\\DACS\\nhom_4_DACS\\Website-for-selling-car-tickets\\wwwroot\\lib\\icon\\location.png",
+      "PackagePath": "staticwebassets\\lib\\icon\\location.png"
+    },
+    {
+      "Id": "D:\\DACS\\nhom_4_DACS\\Website-for-selling-car-tickets\\wwwroot\\lib\\icon\\new1.jpg",
+      "PackagePath": "staticwebassets\\lib\\icon\\new1.jpg"
+    },
+    {
+      "Id": "D:\\DACS\\nhom_4_DACS\\Website-for-selling-car-tickets\\wwwroot\\lib\\icon\\new2.jpg",
+      "PackagePath": "staticwebassets\\lib\\icon\\new2.jpg"
+    },
+    {
+      "Id": "D:\\DACS\\nhom_4_DACS\\Website-for-selling-car-tickets\\wwwroot\\lib\\icon\\new3.jpg",
+      "PackagePath": "staticwebassets\\lib\\icon\\new3.jpg"
+    },
+    {
+      "Id": "D:\\DACS\\nhom_4_DACS\\Website-for-selling-car-tickets\\wwwroot\\lib\\icon\\new4.jpg",
+      "PackagePath": "staticwebassets\\lib\\icon\\new4.jpg"
+    },
+    {
+      "Id": "D:\\DACS\\nhom_4_DACS\\Website-for-selling-car-tickets\\wwwroot\\lib\\icon\\new5.png",
+      "PackagePath": "staticwebassets\\lib\\icon\\new5.png"
+    },
+    {
+      "Id": "D:\\DACS\\nhom_4_DACS\\Website-for-selling-car-tickets\\wwwroot\\lib\\icon\\people_admin.png",
+      "PackagePath": "staticwebassets\\lib\\icon\\people_admin.png"
+    },
+    {
+      "Id": "D:\\DACS\\nhom_4_DACS\\Website-for-selling-car-tickets\\wwwroot\\lib\\icon\\rec.png",
+      "PackagePath": "staticwebassets\\lib\\icon\\rec.png"
+    },
+    {
+      "Id": "D:\\DACS\\nhom_4_DACS\\Website-for-selling-car-tickets\\wwwroot\\lib\\icon\\streetview.png",
+      "PackagePath": "staticwebassets\\lib\\icon\\streetview.png"
+    },
+    {
+      "Id": "D:\\DACS\\nhom_4_DACS\\Website-for-selling-car-tickets\\wwwroot\\lib\\icon\\ud1.png",
+      "PackagePath": "staticwebassets\\lib\\icon\\ud1.png"
+    },
+    {
+      "Id": "D:\\DACS\\nhom_4_DACS\\Website-for-selling-car-tickets\\wwwroot\\lib\\icon\\ud2.jpg",
+      "PackagePath": "staticwebassets\\lib\\icon\\ud2.jpg"
+    },
+    {
+      "Id": "D:\\DACS\\nhom_4_DACS\\Website-for-selling-car-tickets\\wwwroot\\lib\\icon\\ud3.jpg",
+      "PackagePath": "staticwebassets\\lib\\icon\\ud3.jpg"
+    },
+    {
+      "Id": "D:\\DACS\\nhom_4_DACS\\Website-for-selling-car-tickets\\wwwroot\\lib\\icon\\ud4.jpg",
+      "PackagePath": "staticwebassets\\lib\\icon\\ud4.jpg"
+    },
+    {
+      "Id": "D:\\DACS\\nhom_4_DACS\\Website-for-selling-car-tickets\\wwwroot\\lib\\icon\\ud5.png",
+      "PackagePath": "staticwebassets\\lib\\icon\\ud5.png"
+    },
+    {
+      "Id": "D:\\DACS\\nhom_4_DACS\\Website-for-selling-car-tickets\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\DACS\\nhom_4_DACS\\Website-for-selling-car-tickets\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\DACS\\nhom_4_DACS\\Website-for-selling-car-tickets\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\nhom_4_DACS\\Website-for-selling-car-tickets\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\DACS\\nhom_4_DACS\\Website-for-selling-car-tickets\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\DACS\\nhom_4_DACS\\Website-for-selling-car-tickets\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\nhom_4_DACS\\Website-for-selling-car-tickets\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\DACS\\nhom_4_DACS\\Website-for-selling-car-tickets\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\nhom_4_DACS\\Website-for-selling-car-tickets\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\DACS\\nhom_4_DACS\\Website-for-selling-car-tickets\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\DACS\\nhom_4_DACS\\Website-for-selling-car-tickets\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\DACS\\nhom_4_DACS\\Website-for-selling-car-tickets\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Website-for-selling-car-tickets.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Website-for-selling-car-tickets.props",
+      "PackagePath": "build\\Website-for-selling-car-tickets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Website-for-selling-car-tickets.props",
+      "PackagePath": "buildMultiTargeting\\Website-for-selling-car-tickets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Website-for-selling-car-tickets.props",
+      "PackagePath": "buildTransitive\\Website-for-selling-car-tickets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

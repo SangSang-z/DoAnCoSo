@@ -1,0 +1,139 @@
+﻿@{
+    ViewData["Title"] = "Home page";
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/wwwroot/css/reset.css" asp-append-version="true" />
+    <title>@ViewData["Title"] - Website_for_selling_car_tickets</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="~/css/homepage.css" asp-append-version="true" />
+</head>
+
+<body>
+    <main role="main" class="Homepage">
+        <!--search-->
+        <div class="search-main" style="height: 100px; width: 100%; flex:1;">
+            <div class="top" style="height: 50%; background: #45A8EF;">
+                <div class="middle" style="background:#FFFFFF;">
+                    <div class="img-wrapper">
+                        <img src="@Url.Content("~/lib/icon/rec.png")" alt="circle-icon">
+                    </div>
+                    <div class="enter_selection">
+                        <label for="search-input">Nơi xuất phát</label>
+                        <input type=" text" id="search-input" placeholder="Hà Nội" />
+                    </div>
+                    <img src="@Url.Content("~/lib/icon/comeback-icon.jpg")" alt="comeback-icon"
+                        style="height: 50px; width: 50px; margin-right: 20px;">
+                    <img src="@Url.Content("~/lib/icon/location-icon.jpg")" alt="location-icon"
+                        style="height: 50px; width: 50px;">
+                    <div class="enter_selection">
+                        <label for="search-input">Nơi đến</label>
+                        <input type=" text" id="search-input" placeholder="Hồ Chí Minh" />
+                    </div>
+                    <img src="@Url.Content("~/lib/icon/calendar.png")" alt="calendar-icon"
+                        style="height: 50px; width: 50px; margin-right: 20px;" onclick="">
+                    <div class="enter_selection">
+                        <label for="search-input">Ngày đi</label>
+                        <input type=" text" id="search-input" placeholder="1/4/2025" />
+                    </div>
+                    <button class="search-trip" onclick="location.href='@Url.Action("SearchInfTrip", "Search")'">Tìm
+                        chuyến xe</button>
+                </div>
+            </div>
+        </div>
+        <img src="@Url.Content("~/lib/icon/bus-running.png")" alt="bus-lỏ" style="height: 200px; width: 100%;">
+        <!--sell and sale inf-->
+        <div class="container1">
+            <div class="title1">Ưu đãi nổi bật</div>
+            <div class="scroll-container1">
+                <div class="offer-card">
+                    <img src="@Url.Content("~/lib/icon/ud1.png")" alt="Ưu đãi 1" class="img-all">
+                    <div class="offer-content">12h - 14h Thứ 3 - Flash Sale đến 50%</div>
+                </div>
+                <div class="offer-card">
+                    <img src="@Url.Content("~/lib/icon/ud2.jpg")" alt="Ưu đãi 2" class="img-all">
+                    <div class="offer-content">Giảm 50% khi đặt xe limousine Hải Phòng lần đầu tại Vexere</div>
+                </div>
+                <div class="offer-card">
+                    <img src="@Url.Content("~/lib/icon/ud3.jpg")" alt="Ưu đãi 3" class="img-all">
+                    <div class="offer-content">Giảm 25% khi đặt xe đi Hải Phòng lần đầu tại Vexere</div>
+                </div>
+                <div class="offer-card">
+                    <img src="@Url.Content("~/lib/icon/ud4.jpg")" alt="Ưu đãi 4" class="img-all">
+                    <div class="offer-content">Giới thiệu bạn mới - Nhận quà khủng từ Vexe</div>
+                </div>
+                <div class="offer-card">
+                    <img src="@Url.Content("~/lib/icon/ud5.png")" alt="Ưu đãi 4" class="img-all">
+                    <div class="offer-content">Ưu đãi bất ngờ khi đặt Vexe</div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="container2">
+            <div class="title2">Vexe có gì mới?</div>
+            <div class="scroll-container2">
+                <div class="offer-card">
+                    <img src="@Url.Content("~/lib/icon/new1.jpg")" alt="Ưu đãi 1" class="img-all">
+                    <div class="offer-content">Bí kíp chọn xe khách chất lượng cao tại Vexe</div>
+                </div>
+                <div class="offer-card">
+                    <img src="@Url.Content("~/lib/icon/new2.jpg")" alt="Ưu đãi 2" class="img-all">
+                    <div class="offer-content">Tìm xe theo nhu cầu dựa trên các tiêu chí phổ thông</div>
+                </div>
+                <div class="offer-card">
+                    <img src="@Url.Content("~/lib/icon/new3.jpg")" alt="Ưu đãi 3" class="img-all">
+                    <div class="offer-content">Cách chọn điểm đón xe gần bạn nhất</div>
+                </div>
+                <div class="offer-card">
+                    <img src="@Url.Content("~/lib/icon/new4.jpg")" alt="Ưu đãi 4" class="img-all">
+                    <div class="offer-content">Bí kíp săn deal xe khách giá hời khi đặt dịch vụ xe tại Vexe</div>
+                </div>
+                <div class="offer-card">
+                    <img src="@Url.Content("~/lib/icon/new5.png")" alt="Ưu đãi 4" class="img-all">
+                    <div class="offer-content">Tổng hợp chương trình khuyến mãi trong tháng</div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="container3">
+            <div class="title3">Tin tức mới</div>
+            <div class="scroll-container3">
+                <div class="offer-card">
+                    <img src="@Url.Content("~/lib/icon/inf1.png")" alt="Ưu đãi 1" class="img-all">
+                    <div class="offer-content">Công Ty Phương Trang tưng bừng khia trương tuyến mới từ Bến xe Bình Dương
+                        - Bến xe Ô Môn</div>
+                </div>
+                <div class="offer-card">
+                    <img src="@Url.Content("~/lib/icon/inf2.webp")" alt="Ưu đãi 2" class="img-all">
+                    <div class="offer-content">Hệ thống xe hiện đại mới của</div>
+                </div>
+                <div class="offer-card">
+                    <img src="@Url.Content("~/lib/icon/inf3.jpg")" alt="Ưu đãi 3" class="img-all">
+                    <div class="offer-content">Cách chọn điểm đón xe gần bạn nhất</div>
+                </div>
+                <div class="offer-card">
+                    <img src="@Url.Content("~/lib/icon/inf4.jpg")" alt="Ưu đãi 4" class="img-all">
+                    <div class="offer-content">Bí kíp săn deal xe khách giá hời khi đặt dịch vụ xe tại Vexe</div>
+                </div>
+                <div class="offer-card">
+                    <img src="@Url.Content("~/lib/icon/inf5.png")" alt="Ưu đãi 4" class="img-all">
+                    <div class="offer-content">Tổng hợp chương trình khuyến mãi trong tháng</div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+</body>

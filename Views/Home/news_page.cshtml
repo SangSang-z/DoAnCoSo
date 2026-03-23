@@ -1,0 +1,259 @@
+@{
+    ViewData["Title"] = "news page";
+}
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Vexe.com</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: justify;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .header img {
+            height: 40px;
+        }
+
+        .nav {
+            background-color: #007bff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            padding: 20px 0;
+        }
+
+        .section h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .articles {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .article {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .article img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .article a {
+            color: #333;
+        }
+
+        .article a:hover {
+            color: #007bff;
+        }
+
+        .article p {
+            padding: 10px;
+            margin: 0;
+        }
+
+        .article .date {
+            font-size: 12px;
+            color: #777;
+            padding: 0 10px 10px;
+        }
+
+        .load-more {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .load-more a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .load-more a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            background-color: #f5f5f5;
+            padding: 20px 0;
+            text-align: left;
+            border-top: 1px solid #ccc;
+        }
+
+        .footer h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer ul li {
+            margin-bottom: 5px;
+        }
+
+        .footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .copyright {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <a href="#">TRANG CHỦ</a>
+            <a href="#">XE KHÁCH</a>
+            <a href="#">CẨM NANG DU LỊCH</a>
+        </div>
+
+        <div class="section">
+            <div class="articles">
+                <div class="article">
+                    <img src="@Url.Content("~/lib/icon/Doi-Robin-Cap-Treo.webp")" alt="Đồi Robin">
+                    <a href="https://tourdalattravel.com/doi-robin-da-lat/">
+                        <p>Đồi Robin Đà Lạt - Thiên đường ngắm cảnh & chụp ảnh lý tưởng</p>
+                    </a>
+                    <div class="date">18/04/2025</div>
+                </div>
+                <div class="article">
+                    <img src="https://via.placeholder.com/300x150?text=Đồi+Robin" alt="Đồi Robin">
+                    <p>Đồi Robin Đà Lạt - Thiên đường ngắm cảnh & chụp ảnh lý tưởng</p>
+                    <div class="date">18/04/2025</div>
+                </div>
+                <div class="article">
+                    <img src="https://via.placeholder.com/300x150?text=Đà+Lạt" alt="Đà Lạt">
+                    <p>Top 20 địa điểm tham quan miễn phí tại Đà Lạt nhất định phải ghé</p>
+                    <div class="date">18/04/2025</div>
+                </div>
+                <div class="article">
+                    <img src="https://via.placeholder.com/300x150?text=Đà+Lạt" alt="Đà Lạt">
+                    <p>Top 20 địa điểm tham quan miễn phí tại Đà Lạt nhất định phải ghé</p>
+                    <div class="date">18/04/2025</div>
+                </div>
+            </div>
+            <div class="load-more">
+                <a href="#">LOAD MORE</a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>XE KHÁCH</h2>
+            <div class="articles">
+                <div class="article">
+                    <img src="https://via.placeholder.com/300x150?text=Xe+Khách" alt="Xe Khách">
+                    <p>Xe đi Cần Thơ từ Sài Gòn: Top 18 xe uy tín, chất lượng</p>
+                    <div class="date">05/03/2025</div>
+                </div>
+                <div class="article">
+                    <img src="https://via.placeholder.com/300x150?text=Xe+Khách" alt="Xe Khách">
+                    <p>Xe đi chủa Bà Châu Đốc An Giang: Top 5 hãng xe uy tín, chất lượng</p>
+                    <div class="date">07/03/2025</div>
+                </div>
+                <div class="article">
+                    <img src="https://via.placeholder.com/300x150?text=Xe+Khách" alt="Xe Khách">
+                    <p>Xe đi Đà Lạt từ Sài Gòn: Top 24 hãng xe uy tín, chất lượng</p>
+                    <div class="date">20/02/2025</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>CẨM NANG DU LỊCH</h2>
+            <div class="articles">
+                <div class="article">
+                    <img src="https://via.placeholder.com/300x150?text=Đà+Lạt" alt="Đà Lạt">
+                    <p>Thời tiết Đà Lạt và kinh nghiệm cần biết để có chuyến đi lịch trọn vẹn</p>
+                    <div class="date">17/04/2025</div>
+                </div>
+                <div class="article">
+                    <img src="https://via.placeholder.com/300x150?text=Đà+Lạt" alt="Đà Lạt">
+                    <p>Chùa Đà Lạt: Top các ngôi chùa đẹp và nổi tiếng linh thiêng nhất</p>
+                    <div class="date">16/04/2025</div>
+                </div>
+                <div class="article">
+                    <img src="https://via.placeholder.com/300x150?text=Nhà+Trang" alt="Nhà Trang">
+                    <p>Thời tiết Nha Trang và những điều cần biết để có chuyến đi lịch trọn vẹn</p>
+                    <div class="date">16/04/2025</div>
+                </div>
+            </div>
+            <div class="load-more">
+                <a href="#">LOAD MORE</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <h3>Mục lục bài viết</h3>
+            <p>Tổng tất cả các bài viết về các tuyến xe khách, thông tin vé xe và các bài viết về kinh nghiệm du lịch.
+            </p>
+            <ul>
+                <li>Xe đi Cần Thơ từ Sài Gòn: Top 18 xe khách tốt nhất 2025</li>
+                <li>Xe đi Hà Nội - Quảng Ninh: Top 5 xe khách chất lượng</li>
+                <li>Xe đi Đà Lạt từ Sài Gòn: 24 giờ với chuyến xe tốt</li>
+                <li>Thông tin xe khách vận hành từ các tỉnh đến Hà Nội và Sài Gòn</li>
+                <li>Top 20 địa điểm tham quan miễn phí tại Đà Lạt cần biết</li>
+                <li>Kinh nghiệm du lịch: Trang chủ với các bài viết về xe khách và du lịch</li>
+            </ul>
+            <h3>Một số câu hỏi thường gặp</h3>
+            <ul>
+                <li><a href="#">Mục lục bài viết</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

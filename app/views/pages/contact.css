@@ -1,0 +1,39 @@
+
+        body {
+            background-color: #f4f7fc;
+            margin: 0;
+            padding: 0;
+        }
+        .contact-wrapper {
+            background-color: #ffffff;
+            padding: 60px 80px;
+        }
+        .container-contact{
+            margin-top: 100;
+            margin-bottom: 100px;
+        }
+        .map-frame {
+            width: 100%;
+            height: 450px;
+            border: none;
+            border-radius: 8px;
+        }
+        .section-title {
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .contact-info i {
+            color: #007bff;
+            margin-right: 8px;
+        }
+        .form-control,
+        textarea {
+            border-radius: 4px;
+        }
+        .form-label {
+            font-weight: 500;
+        }
+        
+           

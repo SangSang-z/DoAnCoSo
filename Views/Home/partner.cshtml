@@ -1,0 +1,189 @@
+@{
+    ViewData["Title"] = "partner Page";
+}
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khi bạn trở thành đối tác của Vexe - Vexe.com</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: justify;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #e6f0fa;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .header img {
+            height: 40px;
+        }
+
+        .main-title {
+            font-size: 28px;
+            color: #007bff;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .benefits {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .benefit {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .benefit img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+        .benefit p {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .form-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+
+        .form-section h2 {
+            font-size: 20px;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .form-group input {
+            width: 48%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-group.full-width input {
+            width: 100%;
+        }
+
+        .form-group.note {
+            font-size: 12px;
+            color: #777;
+        }
+
+        .submit-btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .footer {
+            background-color: #007bff;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icons img {
+            width: 20px;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1 class="main-title">KHI BẠN TRỞ THÀNH ĐỐI TÁC CỦA VÉXE BẠN SẼ ĐƯỢC GÌ?</h1>
+
+        <div class="benefits">
+            <div class="benefit">
+                <img src="https://via.placeholder.com/100x100?text=Revenue" alt="Revenue">
+                <p>Tăng doanh thu cho nhà xe. Chung tay giúp bạn mở bán vé trực tuyến. Hệ thống bán vé xe khách online
+                    số 1 Việt Nam</p>
+            </div>
+            <div class="benefit">
+                <img src="https://via.placeholder.com/100x100?text=Digital" alt="Digital">
+                <p>Chuyển đổi số cho nhà xe. Chung tay giúp bạn mở bán vé trực tuyến Hệ thống bán vé xe khách online số
+                    1 Việt Nam</p>
+            </div>
+            <div class="benefit">
+                <img src="https://via.placeholder.com/100x100?text=Marketing" alt="Marketing">
+                <p>Làm thương hiệu hiệu cho nhà xe. Thông qua tư vấn, định hướng, thực thi các hoạt động marketing đặc
+                    thù cho ngành vận tải</p>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h2>Cùng VÉXE phát triển thương hiệu của bạn</h2>
+            <form>
+                <div class="form-group">
+                    <input type="text" placeholder="Họ và tên nguồn đại diện">
+                    <input type="text" placeholder="Số điện thoại liên lạc">
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Tên nhà xe">
+                </div>
+                <div class="form-group full-width">
+                    <input type="text" placeholder="Tuyến đường xe chạy">
+                </div>
+                <div class="form-group full-width">
+                    <input type="text" placeholder="Logo nhà xe">
+                </div>
+                <div class="form-group note">
+                    <p>(*): Đăng ký để được tư vấn chi tiết</p>
+                </div>
+                <button type="submit" class="submit-btn">ĐĂNG KÝ</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

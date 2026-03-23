@@ -1,0 +1,243 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/wwwroot/css/reset.css" asp-append-version="true" />
+    <title>@ViewData["Title"] - Website_for_selling_car_tickets</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="~/css/main.css" asp-append-version="true" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container-fluid" style="background: #1778C8;">
+                <div class="logo-container">
+                    <img src="@Url.Content("~/lib/icon/bus.png")" alt="Bus" width="60" height="60" class="img-logo"
+                        style="margin-left: 20px;">
+                    <div class="title-logo">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Homepage">Vxe.com</a>
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Homepage">Hệ Thống bán vé uy
+                            tín hàng đầu Việt Nam</a>
+                    </div>
+
+                </div>
+                <div class="navbar-collapse">
+                    <ul class="navbar-nav" style="cursor: pointer; gap: 20px;">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Homepage">Trang
+                                chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="scheduleLink" class="nav-link text-dark" href="javascript:void(0)">Lịch trình</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-controller="Home" asp-action="Contact">Liên hệ</a>
+                        </li>
+                        <!-- Nút Đăng Nhập -->
+                        <a href="javascript:void(0);" id="loginBtn" class="nav-btn login-btn">Đăng Nhập</a>
+                        <a href="javascript:void(0);" id="registerBtn" class="nav-btn register-btn"
+                            onclick="showRegisterForm()">Đăng Ký</a>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Form Đăng Nhập -->
+    <!-- Form đăng nhập -->
+    <div id="loginForm" class="login-form">
+        <form>
+            <button class="close-btn" type="button" onclick="closeLoginForm()">×</button> <!-- Dấu X để đóng -->
+            <h2 class="login-title">Đăng nhập</h2>
+
+            <label for="phone">Số điện thoại</label>
+            <input type="text" id="phone" name="phone" placeholder="Nhập số điện thoại" required>
+
+            <label for="password">Mật khẩu</label>
+            <input type="password" id="password" name="password" placeholder="Nhập mật khẩu" required>
+
+            <button class="login-account" type="submit">Đăng Nhập</button>
+
+            <div class="login-links">
+                <a href="javascript:void(0)" onclick="showForgotPasswordForm()">Quên mật khẩu?</a>
+                <a href="javascript:void(0)" onclick="showRegisterForm()">Chưa có tài khoản?</a>
+                <!-- Chuyển tới form đăng ký -->
+            </div>
+        </form>
+    </div>
+
+    <!-- Form đăng ký -->
+    <div id="registerForm" class="register-form" style="display: none;">
+        <form>
+            <button class="close-btn" type="button" onclick="closeLoginForm()">×</button> <!-- Dấu X để đóng -->
+            <h2 class="register-title">Đăng ký tài khoản</h2>
+
+            <label for="phone">Số điện thoại</label>
+            <input type="text" id="phone" name="phone" placeholder="Nhập số điện thoại" required>
+
+            <label for="password">Mật khẩu</label>
+            <input type="password" id="password" name="password" placeholder="Nhập mật khẩu" required>
+
+            <label for="confirmPassword">Xác nhận mật khẩu</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Xác nhận mật khẩu" required>
+
+            <button type="button" class="register-account" onclick="showLoginForm()">Đăng ký</button>
+
+
+            <div class="register-links">
+                <a href="javascript:void(0)" onclick="showLoginForm()">Đã có tài khoản? Đăng nhập</a>
+                <!-- Quay lại form đăng nhập -->
+            </div>
+        </form>
+    </div>
+    <!-- Quên mật khẩu-->
+    <div id="forgotPasswordForm" class="forgot-password-form" style="display: none;">
+        <form>
+            <button class="close-btn" type="button" onclick="closeForgotPasswordForm()">×</button>
+            <h2 class="register-title">Khôi phục mật khẩu</h2>
+
+            <label for="forgotPhone">Số điện thoại</label>
+            <input type="text" id="forgotPhone" name="phone" placeholder="Nhập số điện thoại đã đăng ký" required>
+
+            <button type="submit" class="reset-password-btn">Gửi yêu cầu khôi phục</button>
+
+            <div class="register-links">
+                <a href="javascript:void(0)" onclick="showLoginForm()">Quay lại đăng nhập</a>
+            </div>
+        </form>
+    </div>
+    <!-- Nội dung của các trang con sẽ được render ở đây -->
+    <main>
+        @RenderBody() <!-- Render nội dung của trang con vào đây -->
+    </main>
+
+    <footer role="footer" class="footer-home">
+        <div class="footer-inf-page">
+            <div class="footer-box">
+                <ul>
+                    <li>
+                        <p>TRUNG TÂM TỔNG ĐÀI</p>
+                        <p href="#" style="color:#D52626; font-size:3rem; margin-top: auto;" class=" address">1900 2717
+                        </p>
+
+                    </li>
+                    <li>
+                        <p class=" address">10/80c Song Hành Xa Lộ Hà Nội, Phường Tân Phú, Thủ Đức, Hồ Chí Minh</p>
+                    </li>
+                    <li>
+                        <p class=" address">Email: hotro@vexe.vn</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <ul>
+                    <p> Về chúng tôi</p>
+                    <li>
+                        <a class="nav-link text-dark" asp-controller="Home" asp-action="System_homecar">Hệ thống
+                            quả lí nhà xe</a>
+                    </li>
+                    <li>
+                        <a class="nav-link text-dark" asp-controller="Home" asp-action="partner">Trở thành đối
+                            tác</a>
+                    </li>
+                    <li>
+                        <a class="nav-link text-dark" asp-controller="Home" asp-action="introduce_Page">Giới Thiệu
+                            Vexe.com</a>
+                    </li>
+                    <li>
+                        <a class="nav-link text-dark" asp-controller="Home" asp-action="news_page">Tin tức</a>
+                    </li>
+                    <li>
+                        <a class="nav-link text-dark" asp-controller="Home" asp-action="Contact">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <ul>
+                    <p>Chính sách</p>
+                    <li>
+                        <a class="nav-link text-dark" asp-controller="Home" asp-action="polyci_customer">Chính
+                            sách bảo
+                            mật thông tin</a>
+                    </li>
+                    <li>
+                        <a class="nav-link text-dark" asp-controller="Home" asp-action="polyci_pay">Chính sách bảo
+                            mật thanh toán</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <p>Kết nối</p>
+                <a href="#">
+                    <img src="@Url.Content("~/lib/icon/Facebook.png")" alt="logo-facebook">
+                </a>
+                <a href="#">
+                    <img src="@Url.Content("~/lib/icon/TikTok.png")" alt="logo-tiktok">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <!-- script thao tác trong form-->
+    <script>
+
+        // Hiển thị form đăng nhập khi nhấn nút "Đăng Nhập"
+        document.getElementById("loginBtn").onclick = function () {
+            document.getElementById("loginForm").style.display = "flex";
+        }
+
+        // Hàm đóng form đăng nhập và đăng ký
+        function closeLoginForm() {
+            document.getElementById("loginForm").style.display = "none";
+            document.getElementById("registerForm").style.display = "none";
+        }
+
+        // Hiển thị form đăng ký
+        function showRegisterForm() {
+            document.getElementById('loginForm').style.display = 'none'; // Ẩn form đăng nhập
+            document.getElementById('registerForm').style.display = 'block'; // Hiển thị form đăng ký
+        }
+
+        // Hiển thị form đăng nhập
+        function showLoginForm() {
+            document.getElementById('loginForm').style.display = 'block'; // Hiển thị form đăng nhập
+            document.getElementById('registerForm').style.display = 'none'; // Ẩn form đăng ký
+            document.getElementById('forgotPasswordForm').style.display = 'none';
+
+        }
+        // quên mật khẩu
+        function showForgotPasswordForm() {
+            document.getElementById('loginForm').style.display = 'none';
+            document.getElementById('forgotPasswordForm').style.display = 'block';
+        }
+
+        function closeForgotPasswordForm() {
+            document.getElementById('forgotPasswordForm').style.display = 'none';
+        }
+        //sử lí lịch trình
+        document.getElementById('scheduleLink').addEventListener('click', function () {
+            var isAuthenticated = '@User.Identity?.IsAuthenticated' === 'True';
+
+            if (isAuthenticated) {
+                // Nếu đã đăng nhập thì chuyển trang
+                window.location.href = '@Url.Action("Privacy", "Home")';
+            } else {
+                // Nếu chưa đăng nhập thì hiện form đăng nhập
+                document.getElementById('loginForm').style.display = 'flex';
+            }
+        });
+    </script>
+</body>
+
+</html>
